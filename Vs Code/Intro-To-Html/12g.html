@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12g Flex & Grid</title>
+  <style>
+    .grid{
+      display: grid;
+      grid-template-columns: 70px 150px 100px;
+      align-items: center;
+      
+    }
+    .thumbnail{
+      background-color: yellow;
+      
+    }
+
+    .thumbnail-1{
+      width: 50px;
+      border-radius: 50px;
+      align-self: center;
+      
+    }
+    .text{
+      background-color: red;
+      font-size: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="thumbnail">
+      <img class="thumbnail-1" src="../Thumbnails/thumbnail-1.webp" alt="">
+    </div>
+    <div class="text">
+      <p>Oliver</p>
+      <p>The Cat</p>
+      <p>Popular</p>
+    </div>
+    <div><button>Follow</button></div>
+  </div>
+</body>
+</html>

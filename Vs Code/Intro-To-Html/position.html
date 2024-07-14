@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+</head>
+    
+<body style="
+    height: 3000px;
+    padding-top: 70px;
+    padding-left: 80px;
+">
+    <div style="
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 70px;
+    z-index: 0;
+    ">Header</div>
+
+    <div style="
+    background-color: green;
+    color: white;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 70px;
+    width: 72px;
+    "> <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 0px;
+      left: 0px;
+    ">X</div>
+    Sidebar
+    </div>
+
+    <!--
+    Position absolute is used mostly inside a div having position relative or position fixed. if we apply position absolute inside a div having position fixed the position absolute also behave like fixed but it is not the case for position relative. which element stays above over other depends on z-index: value; hihger value higher priority 
+    -->
+
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 100px;
+      left: 10px;
+      z-index: 1;
+    ">absolute</div>
+
+    <!--
+      Position absolute is fixed to the page it stays upwards when we scroll while position fixed remain fixed because it is attatch to the browser window not the page
+    -->
+
+  <div style="
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    ">Div 1</div>
+    <div style="
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    ">
+    Div 2
+    <div style="
+      position: absolute;
+      background-color: black;
+      color: white;
+      bottom: 14px;
+      right: 10px;
+      z-index: 1;
+    ">5:00</div></div>
+</body>
+</html>
